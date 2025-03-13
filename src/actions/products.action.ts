@@ -7,7 +7,6 @@ const SERVER_URL =
   process.env.NEXT_PUBLIC_SERVER_URL || "https://fakestoreapi.com";
 
 export const getProducts = async ({
-  priceSort = "desc",
   category = "all",
 }: {
   priceSort?: string;
@@ -30,12 +29,8 @@ export const getProducts = async ({
           product.category === "women's clothing"
       );
     }
-
-    if (priceSort === "asc") {
-      products.sort((a, b) => a.price - b.price);
-    } else if (priceSort === "desc") {
-      products.sort((a, b) => b.price - a.price);
-    }
+    // latest to oldest
+    products.sort((a, b) => b.price - a.price);
 
     return products;
   } catch (error) {

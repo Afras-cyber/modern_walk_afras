@@ -11,14 +11,14 @@ export default function Home() {
           <h1 className="text-2xl font-bold mb-6">Flash Sale</h1>
           <div className="overflow-x-auto scrollbar-hide">
             <div className="flex space-x-10 w-max">
-              <ProductList priceSort="desc" />
+              <ProductList  />
             </div>
           </div>
         </section>
 
         <section>
           <h2 className="text-2xl font-bold mb-6 text-[#0E0E0E]">Categories</h2>
-          <div className="grid grid-cols-2 gap-10 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 ">
             <CategoryButton
               route="mens-clothing"
               label="Men's Clothing"
