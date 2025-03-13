@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# WireApp Front-End Engineer Technical Assessment
+
+Hi, I am Ahamed Afras. This is the repo for the WireApp Front-End Engineer Technical Assessment.
 
 ## Getting Started
 
