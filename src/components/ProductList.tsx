@@ -1,7 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
-import ProductCard from "./card";
 import { getProducts } from "@/actions/products.action";
+
+import ProductCard from "./card";
 import { Products } from "../../type";
 
 const ProductSkeleton = () => (
@@ -39,9 +40,9 @@ const ProductList = ({ category }: { category?: string }) => {
         ? Array.from({ length: 8 }).map((_, index) => (
             <ProductSkeleton key={index} />
           ))
-        : products.map((product, index) => (
+        : products.map((product: Products) => (
             <ProductCard
-              key={index}
+              key={product.id}
               title={product.title}
               price={product.price}
               image={product.image}

@@ -1,6 +1,12 @@
 import Image from "next/image";
 
-const ProductCard = ({ title, price, image, description, category }: any) => {
+const ProductCard = ({ title, price, image, description, category }: {
+  title: string;
+  price: number;
+  image: string;
+  description: string;
+  category: string;
+}) => {
   return (
     <div className="flex flex-col bg-white rounded-2xl shadow-[4px_4px_6px_rgba(0,0,0,0)]  shadow-gray-400/50 w-80 lg:w-70 xl:w-70 2xl:w-86 mb-2">
       <div className="p-5 text-center">

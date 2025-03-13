@@ -1,6 +1,10 @@
 import Link from "next/link";
 
-const CategoryButton = ({ label, bgColor, route }: any) => {
+const CategoryButton = ({ label, bgColor, route }: {
+  label: string;
+  bgColor: string;
+  route: string;
+}) => {
     return (
       <Link
         href={`/${route}`}

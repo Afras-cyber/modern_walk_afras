@@ -1,8 +1,9 @@
 "use client";
+import { useEffect, useState } from "react";
+import { useParams, useRouter, notFound } from "next/navigation";
+
 import Header from "@/components/Header";
 import ProductList from "@/components/ProductList";
-import { useParams, useRouter, notFound } from "next/navigation";
-import { useEffect, useState } from "react";
 
 const Category = () => {
   const [showName, setShowName] = useState<string | null>(null);

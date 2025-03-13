@@ -30,7 +30,7 @@ export const getProducts = async ({
       );
     }
     // latest to oldest
-    products.sort((a, b) => b.price - a.price);
+    products.sort((a, b) => b.id - a.id);
 
     return products;
   } catch (error) {
