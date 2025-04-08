@@ -1,6 +1,4 @@
-# WireApp Front-End Engineer Technical Assessment
 
-Hi, I am Ahamed Afras. This is the repo for the WireApp Front-End Engineer Technical Assessment.
 
 ## Getting Started
 

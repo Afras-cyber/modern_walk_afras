@@ -1,6 +1,12 @@
 import Image from "next/image";
 
-const ProductCard = ({ title, price, image, description, category }: {
+const ProductCard = ({
+  title,
+  price,
+  image,
+  description,
+  category,
+}: {
   title: string;
   price: number;
   image: string;
@@ -18,8 +24,7 @@ const ProductCard = ({ title, price, image, description, category }: {
           alt={title}
           width={500}
           height={500}
-           className="mx-auto h-36 sm:h-40 lg:h-44 w-[80%] sm:w-[70%] object-cover rounded-xl"
-          
+          className="mx-auto h-36 sm:h-40 lg:h-44 w-[80%] sm:w-[70%] object-cover rounded-xl"
         />
       </div>
       <div
